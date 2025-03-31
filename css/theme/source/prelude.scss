@@ -35,8 +35,8 @@ $mainColor: #2F4F4F;
 $headingColor: #2F4F4F;
 
 $mainFontSize: 42px;
-$mainFont: "Lato", sans-serif;
-$headingFont: "Exo 2", sans-serif;
+// $mainFont: "Lato", sans-serif;
+// $headingFont: "Exo 2", sans-serif !important;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -45,7 +45,7 @@ $linkColor: #B87333;
 $linkColorHover: color.scale($linkColor, $lightness: 15%);
 $selectionBackgroundColor: color.scale($linkColor, $lightness: 25%);
 
-$heading1Size: 2.5em;
+$heading1Size: 2.0em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
