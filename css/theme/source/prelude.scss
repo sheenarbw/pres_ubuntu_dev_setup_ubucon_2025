@@ -1,0 +1,71 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@use "sass:color";
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+// @import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+// --color-soft-green: #7BBF68;
+// --color-slate-gray: #2F4F4F;
+// --color-muted-teal: #5e8d83;
+// --color-copper-bronze: #B87333;
+// --color-offwhite-gray: #FEFFFA;
+// --color-midnight-blue: #06213b;
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #FEFFFA;
+
+$mainColor: #2F4F4F;
+$headingColor: #2F4F4F;
+
+$mainFontSize: 42px;
+$mainFont: "Lato", sans-serif;
+$headingFont: "Exo 2", sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #B87333;
+$linkColorHover: color.scale($linkColor, $lightness: 15%);
+$selectionBackgroundColor: color.scale($linkColor, $lightness: 25%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$overlayElementBgColor: 0, 0, 0;
+$overlayElementFgColor: 240, 240, 240;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+
+// @mixin bodyBackground() {
+//     // @include radial-gradient(#5e8d83, white);
+//     background-image: url("/images/brand/Prelude\ -\ Logo.svg");
+//     background-repeat: no-repeat;
+//     background-image: 
+// }
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
