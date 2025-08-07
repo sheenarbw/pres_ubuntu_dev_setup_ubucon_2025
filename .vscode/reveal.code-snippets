@@ -38,6 +38,15 @@
 			"<span class=\"fragment\">$1</span>",
 		]
 	},
+
+	"<sp": {
+		"scope": "html",
+		"prefix": "<sp",
+		"body": [
+			"<span class=\"fragment\">$1</span>",
+		]
+	},
+
 	"sec": {
 		"scope": "html",
 		"prefix": "sec",
@@ -45,4 +54,23 @@
 			"<section>$1</section>",
 		]
 	},
+
+	"<sec": {
+		"scope": "html",
+		"prefix": "<sec",
+		"body": [
+			"<section>$1</section>",
+		]
+	},
+
+
+	"fr": {
+		"scope": "html",
+		"prefix": "fr",
+		"body": [
+			"class=\"fragment\"",
+		]
+	},
+
+	
 }
